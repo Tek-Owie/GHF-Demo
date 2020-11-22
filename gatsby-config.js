@@ -44,6 +44,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `source code pro\:300,400,400i,700`,
+          `varela round\:400` 
+        ],
+        display: 'swap' //It lets the page render the default font while the imported font loads
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
