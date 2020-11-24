@@ -1,6 +1,6 @@
 import React from "react"
 import {useStaticQuery, graphql} from "gatsby"
-import { FooterWrapper, FooterSocialWrapper, FooterSocialIcons } from "../elements"
+import { FooterWrapper, FooterSocialWrapper, FooterSocialIcons, P } from "../elements"
 
 export const Footer = () => {
 
@@ -38,7 +38,7 @@ query {
                     <img src={data.whatsapp.publicURL} alt="whatsapp logo"></img>
                 </a>
             </FooterSocialIcons>
-            <p>(c) 2020 GHF Company. All Rights Reserved</p>
+            <P size="xSmall" color="dark3">(c) 2020 GHF Company. All Rights Reserved</P>
         </FooterSocialWrapper>
     </FooterWrapper>
 }
