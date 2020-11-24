@@ -1,11 +1,12 @@
 import React from "react";
-import { Container } from "../components";
+import { Container, FeatureImage } from "../components";
 
 
 const IndexPage = () => {
   return (
     <Container>
       <h1>Golden Health & Fitness Blog</h1>
+      <FeatureImage />
     </Container>
   )
 }
