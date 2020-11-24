@@ -1,12 +1,15 @@
 import React from "react";
-import { Container, FeatureImage } from "../components";
+import { Container, ContentCard, FeatureImage, Content } from "../components";
 
 
 const IndexPage = () => {
   return (
     <Container>
-      <h1>Golden Health & Fitness Blog</h1>
+      {/* <h1>Golden Health & Fitness Blog</h1> */}
       <FeatureImage />
+      <Content>
+        <ContentCard date="2020-11-31" title="Why Get A Trainer?" excerpt="Lorem Ipsum" slug="why-get-a-trainer"></ContentCard>
+      </Content>
     </Container>
   )
 }
