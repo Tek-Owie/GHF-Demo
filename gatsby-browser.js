@@ -1,8 +1,10 @@
 import React from "react";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import "bootstrap/dist/css/bootstrap.min.css";
 import {MDXProvider} from "@mdx-js/react"
 import Theme from "./src/themes/theme";
 import {Table} from "./src/components"
+
 
 
 
@@ -27,9 +29,9 @@ const components = {
 export const wrapRootElement = ({ element }) => (
     <MDXProvider components={components}>
         <ThemeProvider theme={Theme}>
-        <GlobalStyles />
-        {element}
-    </ThemeProvider>
+            <GlobalStyles />
+                {element}
+        </ThemeProvider>
     </MDXProvider>
     
 )

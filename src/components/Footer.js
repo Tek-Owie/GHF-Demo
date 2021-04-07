@@ -7,16 +7,10 @@ export const Footer = () => {
 const data = useStaticQuery(graphql`
 
 query {
-    facebook: file(relativePath: {eq: "icon-48x48.png"}) {
+    instagram: file(relativePath: {eq: "whatsapp.svg"}) {
         publicURL
     }
-    twitter: file(relativePath: {eq: "icon-72x72.png"}) {
-        publicURL
-    }
-    instagram: file(relativePath: {eq: "icon-48x48.png"}) {
-        publicURL
-    }
-    whatsapp: file(relativePath: {eq: "icon-72x72.png"}) {
+    whatsapp: file(relativePath: {eq: "insta.svg"}) {
         publicURL
     }
 }
@@ -24,21 +18,16 @@ query {
 `)
     return <FooterWrapper>
         <FooterSocialWrapper>
+            <P font-size="xSmall" color="dark3" textAlign="center" style={{fontStyle: 'italic'}}>Connect with us</P>
             <FooterSocialIcons>
-                <a href="https:facebook.com" target="_blank" rel="noopener noreferrer">
-                    <img src={data.facebook.publicURL} alt="Facebook logo"></img>
-                </a>
-                <a href="https:instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https:instagram.com/li_goldiee" target="_blank" rel="noopener noreferrer">
                     <img src={data.instagram.publicURL} alt="instagram logo"></img>
-                </a>
-                <a href="https:twitter.com" target="_blank" rel="noopener noreferrer">
-                    <img src={data.twitter.publicURL} alt="twitter logo"></img>
                 </a>
                 <a href="https:whatsapp.com" target="_blank" rel="noopener noreferrer">
                     <img src={data.whatsapp.publicURL} alt="whatsapp logo"></img>
                 </a>
             </FooterSocialIcons>
-            <P size="xSmall" color="dark3">(c) 2020 GHF Company. All Rights Reserved</P>
+            <P size="xSmall" color="dark3">&copy; 2020 GHF Company. <br/>All Rights Reserved</P>
         </FooterSocialWrapper>
     </FooterWrapper>
 }

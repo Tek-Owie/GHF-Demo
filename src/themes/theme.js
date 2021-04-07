@@ -1,7 +1,7 @@
 export default {
     fonts: {
-        main: "source code pro, sans-serif",
-        code: "varela round",
+        main: "spartan, sans-serif",
+        code: "khula",
     },
     colors: {
         main1: "hsl(207,70%,59%)",
@@ -11,6 +11,7 @@ export default {
         dark3: "hsl(227,2%,64%)",
         light1: "hsl(0,0%,97%)",
         light2: "hsl(0,0%,99%)",
+        light3: "#d4af37",
     },
     breakpoints: {
         mobile: "only screen and (max-width: 50rem)",

@@ -1,10 +1,12 @@
 import React from "react";
 import {ContainerWrapper} from "../elements";
-import {Nav, Footer} from "../components"
+import {NavBar, Footer} from "../components"
 
 export const Container = ({children}) => {
     return <ContainerWrapper>
-        <Nav></Nav>
+        {/* <Nav></Nav> */}
+        {/* React burger menu tutorial */}
+        <NavBar/>
         {children}
         <Footer></Footer>
     </ContainerWrapper>

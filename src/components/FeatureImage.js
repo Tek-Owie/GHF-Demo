@@ -3,13 +3,14 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { FeatureImageWrapper } from "../elements"
 
-export const FeatureImage = ({fixed}) => {
+export const FeatureImage = ({fluid}) => {
     
     const data = useStaticQuery (graphql`
         query {
-            imageSharp(fixed: {originalName: {eq: "featureimage.jpg"}}) {
-                fixed {
-                    ...GatsbyImageSharpFixed
+            imageSharp(fluid: {originalName: {eq: "woman-exercising-indoors.jpg"}}) {
+                fluid (maxWidth: 1000, quality: 75) {
+                    ...GatsbyImageSharpFluid
+                      
                 }
             }
         }
@@ -17,13 +18,7 @@ export const FeatureImage = ({fixed}) => {
     
     return (
         <FeatureImageWrapper>
-            <Img fixed={fixed ? fixed : data.imageSharp.fixed} style={{
-                position: "absolute",
-                left: 0,
-                top: 0,
-                width: "100%",
-                height: "100%",
-            }} />
+            <Img  fluid={fluid ? fluid : data.imageSharp.fluid}/>
         </FeatureImageWrapper>
     )
 }

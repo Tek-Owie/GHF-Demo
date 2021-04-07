@@ -8,6 +8,7 @@ import {
     Pagination,
 } from "../components"
 import {H1, P} from "../elements"
+import SEO from "../components/seo"
 
 const allPosts = ({pageContext, data}) => {
     const {currentPage, numPages} = pageContext
@@ -20,22 +21,24 @@ const allPosts = ({pageContext, data}) => {
 
     return (
         <Container>
+            <SEO title={data.site.siteMetadata.title}/>
             <FeatureImage />
             <Content>
                 <H1 textAlign="center" margin="0 0 1rem 0">
-                    Lorem Ipsum
+                    {data.site.siteMetadata.title}
                 </H1>
-                <P color="dark2" textAlign="center">
-                    Lorem Ipsum
+                <P color="dark2" textAlign="center" style={{fontStyle: 'italic',
+                    fontSize: '0.875rem'}}>
+                {data.site.siteMetadata.description}
                 </P>
                 {posts.map(post => (
                     <ContentCard 
                         key={post.node.frontmatter.slug}
                         date={post.node.frontmatter.date}
                         title={post.node.frontmatter.title}
-                        excerpt={post.node.frontmatter.excerpt}
+                        excerpt={post.node.excerpt}
                         slug={post.node.frontmatter.slug}
-
+                        readingTime={post.node.fields.readingTime.text}
                     />
                 ))}
             </Content>
@@ -56,14 +59,25 @@ export const pageQuery = graphql`
         allMdx(sort: {fields: frontmatter___date, order: DESC}, skip: $skip, limit: $limit) {
             edges {
               node {
+                excerpt(pruneLength: 50, truncate: true)
                 frontmatter {
                   slug
                   title
                   date(formatString: "MMMM DD, YYYY")
-                  excerpt
+                }
+                fields {
+                    readingTime {
+                        text
+                    }
                 }
               }
             }
-          }
+        }
+        site {
+            siteMetadata {
+                description
+                title
+            }
+        }
     }
 `
