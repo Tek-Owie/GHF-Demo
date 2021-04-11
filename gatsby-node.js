@@ -7,6 +7,11 @@ exports.createPages = async function({actions, graphql}) {
                     frontmatter {
                       slug
                     }
+                    fields {
+                        readingTime {
+                            text
+                        }
+                    }
                     id
                   }
                 }

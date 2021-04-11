@@ -2,11 +2,12 @@
 title: Why Bother About Fitness?
 slug: why-bother-about-fitness
 date: 2020-11-30
-featureImage: sven-mieke-optBC2FxCfc-unsplash.jpg
-excerpt: lorem ipsum
+author: Julie N.
+featureImage: fitWoman.jpg
+# excerpt: lorem ipsum
 ---
 
-<p>I believe my desire towards influencing my community positively, leaving a legacy that will be lasting and beneficial to posterity, 
+I believe my desire towards influencing my community positively, leaving a legacy that will be lasting and beneficial to posterity, 
 my rapid adaptability to new conditions and surroundings which enables me to thrive in said environments, to mention but a few are tools that 
 I have used in the past to succeed wherever necessary, and through recent experiences I have been able to improve upon. I am certain that they 
 will be instrumental towards my success in the University of Aberdeen. For example, it was daunting at first, setting off from my home in Nigeria 
@@ -14,7 +15,7 @@ into an entirely different country – Ghana, to begin my tertiary education. It
 everywhere was noisy, people sounded too loud, I felt out of place, plus I had a traumatising experience in the finance office, 
 where I learnt that I couldn’t register my courses because my half of my tuition fee hadn’t been paid. All these drowned me, 
 I couldn’t concentrate during lectures, I failed quizzes. However, I was able to arrest the situation after asking myself a simple question, 
-<strong>“why am I here?”</strong></p>
+<strong>“why am I here?”</strong>
 
 <p>It is my intention to contribute to the energy sector in my country. There is untapped potential in that regard, 
 everyone is turning a blind eye to renewable resources (perhaps due to ineptitude), 

@@ -15,8 +15,9 @@ const GlobalStyles = createGlobalStyle`
 
     body, html {
         height: 100%;
-        font-family: ${props => props.theme.fonts.main};
-        background-color: ${props => props.theme.colors.light1};
+        font-family: SF Mono, Verdana, Roboto;
+        background-color: white;
+        padding-top: 1.7rem;    ${'' /*Added due to the fixed position of the navbar */}
     }
 `
 
@@ -27,19 +28,9 @@ const components = {
 export const wrapRootElement = ({ element }) => (
     <MDXProvider components={components}>
         <ThemeProvider theme={Theme}>
-        <GlobalStyles />
-        {element}
-    </ThemeProvider>
+            <GlobalStyles />
+                {element}
+        </ThemeProvider>
     </MDXProvider>
     
 )
-
-
-
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
-
-// You can delete this file if you're not using it

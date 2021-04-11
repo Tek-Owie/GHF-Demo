@@ -30,6 +30,7 @@ export const PostWrapper = styled.main`
         font-size: 2.25rem;
         line-height: 2.5rem;
         font-weight: 400;
+        text-transform: uppercase;
     }
 
     h2 {
@@ -153,6 +154,26 @@ export const PostWrapper = styled.main`
     }
 
     @media ${props => props.theme.breakpoints.mobile} {
-        padding: ${props => `${props.theme.spacings.medium} ${props.theme.spacings.large}`};
+        padding: ${props => `${props.theme.spacings.xSmall} ${props.theme.spacings.small}`};
+        p {
+            font-size: 1rem;
+            line-height: 1.2rem;
+            letter-spacing: normal;
+            line-height: 2;
+            font-weight: 400;
+            color: ${props => props.theme.colors.dark2};
+            margin-top: 2rem;
+        }
+
+        p.others {
+            font-size: 0.875rem;
+            font-style: italic;
+            line-height: 1rem;
+            letter-spacing: normal;
+            line-height: 1;
+            font-weight: 400;
+            color: ${props => props.theme.colors.dark2};
+            margin: 1rem 0;
+        }
     }
 `

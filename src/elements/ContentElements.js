@@ -7,12 +7,14 @@ export const ContentWrapper = styled.main`
     padding: ${props => `${props.theme.spacings.xLarge} ${props.theme.spacings.xxLarge}`};
     box-shadow: ${props => props.theme.shadows.shadow1};
     z-index: 10;
+    width: 80%;
+    margin: auto;
 
     @media ${props => props.theme.breakpoints.tablet} {
         grid-column: 2 / span 6;
     }
 
     @media ${props => props.theme.breakpoints.mobile} {
-        padding: ${props => `${props.theme.spacings.medium} ${props.theme.spacings.large}`};
+        padding: ${props => `${props.theme.spacings.xxSmall} ${props.theme.spacings.xSmall}`};
     }
 `
