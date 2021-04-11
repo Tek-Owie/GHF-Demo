@@ -10,6 +10,10 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarAlt, faEdit, faStopwatch } from '@fortawesome/free-solid-svg-icons'
 import SEO from "../components/seo"
+<<<<<<< HEAD
+=======
+import { S9comment } from 'gatsby-plugin-social9-comment'
+>>>>>>> 2fc743038e36c42dd787fbe8c4aaf049f4f09a93
 import ShareButtons from "../components/ShareButtons"
 
 const singlePost = ({data, location}) => {
@@ -30,6 +34,7 @@ const singlePost = ({data, location}) => {
               description={data.mdx.excerpt}
               pathname={location.pathname}
               image={image}/>
+<<<<<<< HEAD
               <Post>
                   <H1 margin="0 0 2rem 0">{data.mdx.frontmatter.title}</H1>
                   <Img alt="Credit: Unsplash" fluid={featureImage} />
@@ -43,6 +48,19 @@ const singlePost = ({data, location}) => {
                   <ShareButtons title={postTitle} url={url} />
                   <MDXRenderer>{data.mdx.body}</MDXRenderer>
               </Post>
+=======
+              <Img fluid={featureImage} />
+              <Post>
+                  <H1 margin="0 0 2rem 0">{data.mdx.frontmatter.title}</H1>
+                  <P className="others" style={{fontSize: "0.7rem"}}><FontAwesomeIcon icon={faCalendarAlt} size="1rem"/> {datePublished}</P>
+                  <P className="others"><FontAwesomeIcon icon={faEdit} size="1rem"/> {author}</P>
+                  <P className="others" style={{fontSize: "0.7rem"}}><FontAwesomeIcon icon={faStopwatch} size="1rem"/> {data.mdx.fields.readingTime.text}</P>
+                  <div className="s9-widget-wrapper" display="inline"></div>
+                  <ShareButtons title={postTitle} url={url} />
+                  <MDXRenderer>{data.mdx.body}</MDXRenderer>
+              </Post>
+              <S9comment/>
+>>>>>>> 2fc743038e36c42dd787fbe8c4aaf049f4f09a93
           </Container>
       </>
     )
@@ -62,7 +80,11 @@ export const pageQuery = graphql`
               author
               featureImage {
                 childImageSharp {
+<<<<<<< HEAD
                   fluid (maxWidth: 1000, quality: 50) {
+=======
+                  fluid (maxWidth: 1000, quality: 75) {
+>>>>>>> 2fc743038e36c42dd787fbe8c4aaf049f4f09a93
                     ...GatsbyImageSharpFluid
                     
                   }

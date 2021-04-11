@@ -2,7 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Golden Health & Fitness Blog`,
     description: `Kickstart your journey to fitness and physical pride with this simple, interactive blog.`,
+<<<<<<< HEAD
     keywords: `"fitness trainer", "fitness blog"`,
+=======
+    keywords: ``,
+>>>>>>> 2fc743038e36c42dd787fbe8c4aaf049f4f09a93
     siteUrl: `localhost:8000`,
     author: `Lily Gold`,
     social: {
@@ -39,6 +43,11 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+<<<<<<< HEAD
+=======
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-yaml`,
+>>>>>>> 2fc743038e36c42dd787fbe8c4aaf049f4f09a93
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-yaml`,
@@ -51,7 +60,10 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 1000,
+<<<<<<< HEAD
               showCaptions: true
+=======
+>>>>>>> 2fc743038e36c42dd787fbe8c4aaf049f4f09a93
             }
           }
         ]
@@ -59,6 +71,7 @@ module.exports = {
     },
     `gatsby-remark-reading-time`,
     {
+<<<<<<< HEAD
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Golden Health & Fitness`,
@@ -78,6 +91,64 @@ module.exports = {
             globPatterns: ['src/images/BG Main.png'],
             globDirectory: "public",
          },
+=======
+      resolve: require.resolve(`gatsby-plugin-load-script`),
+      options: {
+        id: "s9-sdk",
+        async: true,
+        defer: true,
+        content: "ed1bd24b4cf445ce81a0943c435579a2",
+        src: "//cdn.social9.com/js/socialshare.min.js"
+      },
+    },
+    `gatsby-remark-reading-time`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `spartan\:300,400,400i,700`,
+          `khula\:400` 
+        ],
+        display: 'swap' //It lets the page render the default font while the imported font loads
+      },
+    },
+    {
+      resolve: `gatsby-plugin-social9-comment`,
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Golden Health & Fitness`,
+        short_name: `GHF`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/BG Main.png`, // This path is relative to the root of the site.
+        legacy: false,
+        cache_busting_mode: `query`,
+        theme_color_in_head: false,
+        icons: [
+        {
+        src: `/favicons/android-chrome-192x192.png`,
+        sizes: `192x192`,
+        type: `image/png`,
+        },
+        {
+        src: `/favicons/android-chrome-512x512.png`,
+        sizes: `512x512`,
+        type: `image/png`,
+        },
+        ], 
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+         workboxConfig: {
+            globPatterns: ['src/images/BG Main.png']
+         }
+>>>>>>> 2fc743038e36c42dd787fbe8c4aaf049f4f09a93
       },
     },
   //  {

@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 # id: author1
 # bio: I am Author 1
 # # profilepicture: ../../content/assets/author1.png
 # - id: author2
 # bio: I am Author 2
 # # profilepicture: ../../content/assets/author2.png
+=======
+id: author1
+bio: I am Author 1
+# profilepicture: ../../content/assets/author1.png
+- id: author2
+bio: I am Author 2
+# profilepicture: ../../content/assets/author2.png
+>>>>>>> 2fc743038e36c42dd787fbe8c4aaf049f4f09a93

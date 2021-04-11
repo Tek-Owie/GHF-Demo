@@ -173,7 +173,11 @@ export const PostWrapper = styled.main`
             line-height: 1;
             font-weight: 400;
             color: ${props => props.theme.colors.dark2};
+<<<<<<< HEAD
             margin: 1rem 0;
+=======
+            margin-top: 2rem;
+>>>>>>> 2fc743038e36c42dd787fbe8c4aaf049f4f09a93
         }
     }
 `

@@ -3,7 +3,11 @@ title: Why Bother About Fitness?
 slug: why-bother-about-fitness
 date: 2020-11-30
 author: Julie N.
+<<<<<<< HEAD:src/posts/why-bother-about-fitness/index.md
 featureImage: fitWoman.jpg
+=======
+featureImage: sven-mieke-optBC2FxCfc-unsplash.jpg
+>>>>>>> 2fc743038e36c42dd787fbe8c4aaf049f4f09a93:src/posts/why-bother-about-fitness/index.mdx
 # excerpt: lorem ipsum
 ---
 
