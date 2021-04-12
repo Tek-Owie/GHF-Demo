@@ -16,7 +16,7 @@ export const Navs = () => {
 
     return (
         <Navbar collapseOnSelect expand="sm" style={{backgroundColor: "hsl(227,2%,12%)"}} variant="dark" fixed="top">
-            <Navbar.Brand href="/">
+            <Link to="/" className="navbar-brand">
             <img
                 src={data.logo.publicURL}
                 width="30"
@@ -24,7 +24,7 @@ export const Navs = () => {
                 className="d-inline-block align-top"
                 alt="Golden Health & Fitness logo"
             />
-            </Navbar.Brand>
+            </Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto">
