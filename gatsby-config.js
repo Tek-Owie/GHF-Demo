@@ -39,6 +39,7 @@ module.exports = {
         cookieDomain: "example.com",
       },
     },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
